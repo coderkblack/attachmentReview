@@ -7,7 +7,7 @@ st.set_page_config(page_title="Internship Survey Dashboard", layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/home/jakes/Documents/notebooks/practice/eac_questionnaire .csv")
+    df = pd.read_csv("responses.csv")
     df.columns = df.columns.str.strip()
     return df
 
